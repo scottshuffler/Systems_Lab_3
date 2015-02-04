@@ -18,10 +18,9 @@ registers.o: registers.h
 	gcc -g -c registers.c -o registers.o 
 tools.o: tools.h
 	gcc -g -c tools.c -o tools.o
-writebackStage.o: writebackStage.h:
+writebackStage.o: writebackStage.h
 	gcc -g -c writebackStage.c -o writebackStage.o
 yess.o: yess.h
 	gcc -g -c yess.c -o yess.o
-
 clean:
 	rm -f *.o
